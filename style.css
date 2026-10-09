@@ -1,0 +1,696 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* body */
+
+body {
+   font-family: Arial, Helvetica, sans-serif;
+    background-color: #191919;
+   color: white;
+}
+
+h2 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+h2 span {
+    color: #f5b642;
+}
+
+p {
+    line-height: 1.8;
+    color: #bbbbbb;
+}
+
+button {
+    background-color: #f5b642;
+    border: none;
+    padding: 14px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+}
+
+
+/* NAVBAR */
+
+header {
+    background-color: #1b1b1b;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo h2 {
+    margin: 0;
+    color: white;
+}
+
+.logo span {
+    color: #f5b642;
+}
+
+.menu {
+    display: none;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu a:hover {
+    color: #f5b642;
+}
+
+.menubtn {
+    width: 30px;
+}
+
+.menubtn span {
+    display: block;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+}
+
+
+/* HERO */
+
+.hero {
+    width: 100%;
+    height: 70vh;
+
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)
+        ),
+        url("images/background/hero-car.jpg");
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.herotext {
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    padding: 20px;
+}
+
+.herotext p:first-child {
+    color: #f5b642;
+    letter-spacing: 5px;
+}
+
+.herotext h1 {
+    font-size: 40px;
+}
+
+.herotext h2 {
+    color: #f5b642;
+}
+
+
+/*  ABOUT */
+.about {
+    padding: 60px 20px;
+}
+
+.aboutinfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.aboutinfo img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 15px;
+}
+
+.aboutinfo div {
+    max-width: 600px;
+}
+
+.aboutinfo li {
+    list-style: none;
+    margin: 15px 0;
+    color: #cccccc;
+}
+
+.aboutinfo li::before {
+    content: "✓";
+    color: #f5b642;
+    margin-right: 10px;
+}
+
+
+/* SECTION TITLE */
+
+.section-title {
+    color: #f5b642;
+    letter-spacing: 5px;
+}
+
+
+/* services */
+
+.services {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.servicecards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.servicecard {
+    width: 100%;
+    max-width: 350px;
+    background-color: #222222;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.servicecard img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.servicecard h3,
+.servicecard p {
+    padding: 10px 20px;
+}
+
+
+/*booking */
+
+.booking {
+    padding: 70px 20px;
+    text-align: center;
+
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)
+        ),
+        url("images/background/hero-car.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.booking form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    max-width: 1100px;
+    margin: auto;
+}
+
+.booking input,
+.booking select {
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+
+/* cars */
+
+.cars {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.carcards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.carcard {
+    width: 100%;
+    max-width: 350px;
+
+    background-color: #222222;
+
+    padding-bottom: 20px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.carcard img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.carcard h3,
+.carcard p,
+.carcard h4 {
+    margin: 10px;
+}
+
+.carcard h4 {
+    color: #f5b642;
+}
+
+
+/* categories */
+
+.categories {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.categorycards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.category {
+    width: 100%;
+    max-width: 350px;
+    position: relative;
+}
+
+.category img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.category h3 {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+
+/* process*/
+
+.process {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.processcards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.processcard {
+    background-color: #222222;
+    padding: 40px;
+    border-radius: 15px;
+    position: relative;
+}
+
+.processcard:hover {
+    background-color: #292929;
+}
+
+.processcard h3 {
+    margin-bottom: 20px;
+}
+
+.processcard b {
+    display: block;
+
+    width: 50px;
+    height: 50px;
+
+    border-radius: 50%;
+
+    background-color: #191919;
+
+    padding-top: 15px;
+
+    color: #f5b642;
+}
+
+.note {
+    margin-top: 30px;
+}
+
+
+/* interested */
+
+.interested {
+    min-height: 400px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 40px;
+
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)
+        ),
+        url("images/background/about-car.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.interested h2 {
+    font-size: 35px;
+}
+
+.darkbtn {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    margin-left: 10px;
+}
+
+
+/* brands */
+
+.brands {
+    padding: 40px 20px;
+    background-color: #222222;
+    text-align: center;
+}
+
+.brands div {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+}
+
+.brands h3 {
+    color: #cccccc;
+}
+
+.brands h3:hover {
+    color: #f5b642;
+}
+
+
+/* testimonials */
+
+.testimonials {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.testimonialcards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.testimonial {
+    width: 100%;
+    max-width: 350px;
+
+    background-color: #222222;
+
+    padding: 25px;
+
+    border-radius: 15px;
+}
+
+.testimonial img {
+    width: 80px;
+    height: 80px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+}
+
+
+/* blog */
+
+.blog {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.blogcards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.blogcards div {
+    width: 100%;
+    max-width: 350px;
+
+    background-color: #222222;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+}
+
+.blogcards img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.blogcards h3,
+.blogcards p {
+    padding: 10px 20px;
+}
+
+
+/* contact */
+
+.contact {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.contact address {
+    line-height: 2;
+    margin-bottom: 30px;
+}
+
+.contact form {
+    max-width: 700px;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+.contact input,
+.contact textarea {
+    padding: 15px;
+
+    border: 1px solid #555;
+
+    background-color: #222222;
+
+    color: white;
+}
+
+.contact textarea {
+    height: 150px;
+}
+
+
+/* footer */
+
+footer {
+    padding: 50px 20px;
+    background-color: #202020;
+}
+
+.footerinfo {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.footerinfo h2 {
+    text-align: left;
+}
+
+.footerinfo h3 {
+    margin-bottom: 15px;
+}
+
+.footerinfo li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.footerinfo input {
+    padding: 12px;
+    width: 100%;
+}
+
+footer hr {
+    margin: 30px 0;
+    border: 1px solid #333;
+}
+
+.copyright {
+    text-align: center;
+}
+
+
+/* 
+   TABLET - 768px
+*/
+
+@media (min-width: 768px) {
+
+    .aboutinfo {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .aboutinfo img {
+        width: 45%;
+    }
+
+    .servicecards {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .carcards {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .categorycards {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .processcards {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .processcard {
+        width: 30%;
+    }
+
+    .testimonialcards {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .blogcards {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .footerinfo {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+
+/* 
+   DESKTOP - 992px
+*/
+
+@media (min-width: 992px) {
+
+    nav {
+        padding: 0 10%;
+    }
+
+    .menubtn {
+        display: none;
+    }
+
+    .menu {
+        width: 60%;
+
+        display: flex;
+
+        justify-content: space-around;
+    }
+
+    .menu li {
+        list-style: none;
+    }
+
+    .menu a {
+        font-size: 16px;
+    }
+
+    .hero {
+        height: 90vh;
+    }
+
+    .herotext h1 {
+        font-size: 55px;
+    }
+
+    .booking form {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .booking input,
+    .booking select {
+        width: 18%;
+    }
+}
