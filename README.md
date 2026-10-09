@@ -22,13 +22,7 @@ A responsive car rental website built using **HTML5 and CSS3**. This project foc
 
 ## 📂 Project Structure
 
-```text
-Car-Rental-Website/
-├── index.html
-├── style.css
-└── assets/
-    └── images/
-```
+Car-Rental-Website/ │ ├── index.html ├── style.css │ └── images/ ├── Background/ │ └── (background images) │ └── Illustrations/ └── (car images and illustrations)
 
 *Note: Update the folder structure above if your actual filenames or folders are different.*
 
@@ -37,7 +31,7 @@ Car-Rental-Website/
 1. Clone this repository:
 
    ```bash
-   git clone YOUR_GITHUB_REPOSITORY_URL
+   git clone (https://github.com/SejalIngole/HTML-CSS-Templates)
    ```
 
 2. Open the project folder.
