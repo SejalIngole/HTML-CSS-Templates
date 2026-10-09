@@ -1,2 +1,2 @@
-# HTML-CSS-Templates
-A collection of responsive website templates built using HTML, CSS.
+# HTML-CSS-Template 1
+A responsive car-rental website template built using HTML, CSS.
